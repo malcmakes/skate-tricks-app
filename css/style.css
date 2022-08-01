@@ -1,0 +1,105 @@
+body {
+    font-family: 'Saira', sans-serif;
+    /* background-color: #073B4C; */
+    background-color: #233359;
+}
+
+section {
+    padding: 2em 2em;
+}
+
+   /* .container, section  {
+    text-align: center;
+   } */
+
+input {
+    margin-bottom: 3em;
+}
+
+input, button {
+    font-size:  2rem;
+}
+
+@media(max-width: 40em) {
+    input, button {
+        color: red;
+        margin-bottom: 1em; 
+        
+        width: 7em;
+        display: block;
+        margin: auto;
+        padding: 0;
+        justify-content: center;   
+        }
+}
+
+.border-line {
+    background-color: white;
+    height: .25em;
+ 
+    margin: 0 4em;
+}
+
+h1, h2, h3, h4, li {
+    /* color: #06D6A0; */
+    color: #73BFC4; 
+}
+
+h1, h2, h3, li {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+#app-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer, #nameOutput, #infoOutput {
+    color: white;
+}
+
+button {
+    /* background-color: #FFD166; */
+    background-color: #ECCF1C;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    /* .split > * {
+        flex-basis: 100%;
+    } */
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+img {
+    height: 15em;
+    width: 15em;
+    border: solid white 3px;
+}
+
+@media(max-width: 40em) {
+    img {
+      display: block;
+      margin: auto;
+      padding: 0;
+    }
+}
