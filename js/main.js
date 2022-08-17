@@ -1,7 +1,8 @@
 document.querySelector('button').addEventListener('click', apiRequest)
 
 const blankDiv = document.querySelector('#div-blank')
-blankDiv.classList.add('hidden')
+
+
 let imgTest = document.querySelector('#img-test')
 let vidTest = document.querySelector('#vid-test')
 
@@ -31,14 +32,16 @@ async function apiRequest(){
            if(data.media != undefined && data.media.endsWith('gif') ){
             console.log('ends with gif') 
             
-            vidTest.classList.add('hidden')
+            // vidTest.classList.add('hidden')
+            imgTest.classList.remove('hidden')
             imgTest.src = data.media 
+
         } 
         //if data.media end with .mp4 create a video element & put data.media in it
         else if ( data.media != undefined && data.media.endsWith('mp4')){
             console.log('ends with mp4')
 
-            imgTest.classList.add('hidden')
+            vidTest.classList.remove('hidden')
             vidTest.src = data.media 
         }
 

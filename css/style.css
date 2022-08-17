@@ -22,7 +22,7 @@ input, button {
 
 @media(max-width: 40em) {
     input, button {
-        color: red;
+        /* color: red; */
         margin-bottom: 1em; 
         
         width: 7em;
