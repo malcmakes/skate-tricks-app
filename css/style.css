@@ -93,8 +93,10 @@ button {
 img {
     height: 15em;
     width: 15em;
-    border: solid white 3px;
+    /* border: solid white 3px; */
 }
+
+
 
 @media(max-width: 40em) {
     img {
