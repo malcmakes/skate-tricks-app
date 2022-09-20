@@ -5,12 +5,8 @@ body {
 }
 
 section {
-    padding: 2em 2em;
+    padding: 1em 2em;
 }
-
-   /* .container, section  {
-    text-align: center;
-   } */
 
 input {
     margin-bottom: 3em;
@@ -21,10 +17,13 @@ input, button {
 }
 
 @media(max-width: 40em) {
+    section {
+        padding: 0 1em;
+    }
+
     input, button {
-        /* color: red; */
+        font-size: 1.5rem;
         margin-bottom: 1em; 
-        
         width: 7em;
         display: block;
         margin: auto;
@@ -36,17 +35,36 @@ input, button {
 .border-line {
     background-color: white;
     height: .25em;
- 
     margin: 0 4em;
 }
 
-h1, h2, h3, h4, li {
-    /* color: #06D6A0; */
+
+h1, h2, h3, h4 {
     color: #73BFC4; 
 }
 
-h1, h2, h3, li {
+h1, h2, h3{
     font-size: 2rem;
+}
+
+li {
+    font-size: 1rem;
+}
+
+.example-title {
+    font-size: 1.5rem;
+}
+
+
+@media(min-width: 40em) {
+    h1, h2, h3, h4, li {
+        
+        font-size: 1.5rem;
+    }
+
+    .example-title {
+        font-size: 1rem;
+    }
 }
 
 h4 {
@@ -54,8 +72,15 @@ h4 {
 }
 
 #app-title {
+    color: white;
     font-size: 3rem;
     text-align: center;
+}
+
+@media(max-width: 40em) {
+    #app-title {
+        font-size: 1.5rem;
+    }
 }
 
 footer {
@@ -67,7 +92,6 @@ footer, #nameOutput, #infoOutput {
 }
 
 button {
-    /* background-color: #FFD166; */
     background-color: #ECCF1C;
 }
 
@@ -80,7 +104,6 @@ button {
     .split {
         flex-direction: row;
     }
-
     /* .split > * {
         flex-basis: 100%;
     } */
@@ -90,13 +113,14 @@ button {
     }
 }
 
-img {
+img,video {
     height: 15em;
-    width: 15em;
+    width: 17em;
+    display: block;
+    margin: auto;
+    padding: 0;
     /* border: solid white 3px; */
 }
-
-
 
 @media(max-width: 40em) {
     img {
