@@ -1,6 +1,6 @@
 <h1>Skate Tricks App</h1>
 
-This is app created to help me learn about different skateboarding tricks. The user types in a skate trick and a description of the trick and a gif is given to the view. This app consumes data from an API that I created for this project. It is currently hosted by Railway.
+This is an app created to help with learning info about different skateboarding tricks. The user types in a skate trick and a description of the trick and a gif is given to the view. This app consumes data from an API that I created for this project. It is currently hosted by Railway.
 
 <h2>How It's Made:</h2>
 
