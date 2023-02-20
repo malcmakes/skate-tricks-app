@@ -2,6 +2,8 @@
 
 This is an app created to help with learning info about different skateboarding tricks. The user types in a skate trick and a description of the trick and a gif is given to the view. This app consumes data from an API that I created for this project. It is currently hosted by Railway.
 
+link: https://malcmakes.github.io/skate-tricks-app/
+
 <h2>How It's Made:</h2>
 
 Front End tech used: HTML, CSS, JavaScript
