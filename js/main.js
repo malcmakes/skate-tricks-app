@@ -13,9 +13,10 @@ async function apiRequest(){
     //resets whats inside of img and video elements to EMPTY
      imgTest.src = ''
      vidTest.src = ''
-
+   
     try{
-        const response = await fetch(`https://healthklub-skate-tricks-api.herokuapp.com/api/${trickName}`)
+        const response = await fetch(`https://web-production-91f8.up.railway.app/api/${trickName}`)
+        // const response = await fetch(`https://healthklub-skate-tricks-api.herokuapp.com/api/${trickName}`)
         const data = await response.json()
 
         console.log(data)
@@ -52,12 +53,10 @@ async function apiRequest(){
             vidTest.classList.remove('hidden')
             vidTest.src = data.media 
         }
-
      }
     }catch(error){
         console.log(error)
     }
-
 }
 
 

@@ -38,11 +38,6 @@ input, button {
     margin: 0 4em;
 }
 
-
-h1, h2, h3, h4 {
-    color: #73BFC4; 
-}
-
 h1, h2, h3{
     font-size: 2rem;
 }
@@ -52,9 +47,9 @@ li {
 }
 
 .example-title {
-    font-size: 1.5rem;
+    color: #118ab2;
+    font-size: 1em;
 }
-
 
 @media(min-width: 40em) {
     h1, h2, h3, h4, li {
@@ -63,7 +58,8 @@ li {
     }
 
     .example-title {
-        font-size: 1rem;
+       
+        font-size: 1.5rem;
     }
 }
 
@@ -72,14 +68,39 @@ h4 {
 }
 
 #app-title {
-    color: white;
+    /* color: white; */
+    /* color: #118ab2; */
+    color: #06d6a0;
     font-size: 3rem;
     text-align: center;
 }
 
+#app-caption {
+    color:white;
+    text-align: center; 
+}
+
+#guide-text {
+    font-size: 1.5rem;
+    color: #06d6a0;
+}
+
+.example-font {
+    color: white;
+}
+
 @media(max-width: 40em) {
     #app-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    #app-caption {
+        font-size: 1rem;
+    }
+
+    #guide-text {
+        font-size: 1rem;
+        text-align: center;
     }
 }
 
@@ -113,7 +134,21 @@ button {
     }
 }
 
-img,video {
+#img-test, #vid-test {
+    border: 3px white solid;
+    height: 23em;
+    width: 35em;
+}
+
+video {
+    
+    display: block;
+    margin: auto;
+    padding: 0;
+    /* border: solid white 3px; */
+}
+
+img {
     height: 15em;
     width: 17em;
     display: block;
@@ -128,4 +163,14 @@ img,video {
       margin: auto;
       padding: 0;
     }
+
+    #img-test, #vid-test {
+        height: 15em;
+    }
+
+    #infoOutput {
+        font-size: 1.5rem;
+    }
+
+
 }
